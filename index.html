@@ -1,0 +1,64 @@
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="impress_circle.css"/>
+<div id=impress>
+    <div class='subsection step' data-scale=0.1>
+        Impress circle is a library based on:
+        <ul>
+            <li>impress.js</li>
+            <li>impress-arrows</li>
+        </ul>
+        It allows to draw a presentation rotating around a circle.<br/>
+        Here is how you use it.
+    </div>
+    <div class="circle">
+        <div data-name="create document">
+            <div data-name="stylesheet">
+                load the stylesheet
+            </div>
+            <div data-name="create impress div">
+                you can add as many normal impress steps as you like
+            </div>
+        </div>
+        <div data-name="write document">
+            <div data-name="format">
+                The circle is an html structure in the impress
+                document:
+                <ul>
+                    <li>Just declare a div of class circle</li>
+                    <li>Declare section divs</li>
+                    <li>Declare subsections divs</li>
+                    <li>Both section and subsection divs use data-name
+                    attribute for their title</li>
+                </ul>
+            </div>
+        </div>
+        <div data-name="enable impress_circle">
+            <div data-name="load library">
+                just include impress_circle.js
+            </div>
+            <div data-name="run impress circle">
+                include <pre>impress_circle(doc);</pre>
+            </div>
+        </div>
+        <div data-name="enable impress_arrows">
+            <div data-name="load library">
+                just include impress_arrows_all.js
+            </div>
+            <div data-name="run impress arrows">
+                if you're using arrow:// images, don't forget to run
+                <pre>impress_arrows().load_images();</pre>
+            </div>
+        </div>
+    </div>
+</div>
+<script type=text/javascript src=impress_circle.js></script>
+<script>
+impress_circle();
+</script>
+</script>
+<script type=text/javascript src=https://cdn.rawgit.com/yazgoo/impress_arrows/master/impress_arrows_all.js>
+</script>
+<script>
+impress_arrows().load_images();
+</script>
